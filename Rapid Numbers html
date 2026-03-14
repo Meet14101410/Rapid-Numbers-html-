@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rapid Numbers</title>
+</head>
+<body>
+
+<h2>Rapid Numbers</h2>
+
+<p id="question"></p>
+<input type="number" id="answer">
+<button onclick="check()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+let a = Math.floor(Math.random()*10);
+let b = Math.floor(Math.random()*10);
+
+document.getElementById("question").innerHTML = a + " + " + b + " = ?";
+
+function check(){
+let user = document.getElementById("answer").value;
+if(user == a+b){
+document.getElementById("result").innerHTML = "Correct!";
+}else{
+document.getElementById("result").innerHTML = "Wrong!";
+}
+}
+</script>
+
+</body>
+</html>
