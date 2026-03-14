@@ -1,0 +1,14 @@
+  let a = Math.floor(Math.random()*10);
+let b = Math.floor(Math.random()*10);
+
+document.getElementById("question").innerHTML = a + " + " + b + " = ?";
+
+function check(){
+let user = document.getElementById("answer").value;
+
+if(user == a + b){
+document.getElementById("result").innerHTML = "Correct!";
+}else{
+document.getElementById("result").innerHTML = "Wrong! Try again.";
+}
+}
